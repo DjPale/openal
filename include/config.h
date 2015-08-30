@@ -192,7 +192,9 @@
 	#define HAVE_MALLOC_H
 
 	/* Define if we have cpuid.h */
-	#define HAVE_CPUID_H
+	#ifndef RASPBERRYPI
+ 	#define HAVE_CPUID_H
+	#endif
 
 	/* Define if we have guiddef.h */
 	/* #undef HAVE_GUIDDEF_H */
